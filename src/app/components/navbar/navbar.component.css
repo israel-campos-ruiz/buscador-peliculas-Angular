@@ -1,0 +1,14 @@
+.botonRedondo{
+    border-radius: 20px;
+}
+
+.navColor{
+    background: #667db6;  
+    background: -webkit-linear-gradient(to righ082c8, #0082c8, #667db6);  
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); 
+    
+}
+
+.colorTexto{
+    color: black;
+}
