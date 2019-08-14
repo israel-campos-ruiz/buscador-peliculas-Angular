@@ -10,22 +10,24 @@
           <div class="carousel-inner">
 
             
-            <div class="carousel-item active">
-              <img    [ngStyle]="{'background-image': 'url('+ (peliculas[0] | peliculaImagen) + ')',
-              'background-size': '100%', 'height': '500px'}" 
-                              class="d-block w-100  " 
-                              alt="..."
+            <div class="carousel-item active" [routerLink]="[ '/pelicula', peliculas[0].id ]"   >
+                <img   
+                    [ngStyle]="{'background-image': 'url('+ (peliculas[0] | peliculaImagen) + ')',
+                    'background-size': '100%', 'height': '500px'}" 
+                    class="d-block w-100  " 
+                    alt="..."
               >              
             </div>
-            <div class="carousel-item">
-              <img [ngStyle]="{'background-image': 'url('+ (peliculas[1] | peliculaImagen) + ')',
+            <div class="carousel-item"  [routerLink]="[ '/pelicula', peliculas[1].id ]">
+              <img 
+               [ngStyle]="{'background-image': 'url('+ (peliculas[1] | peliculaImagen) + ')',
                               'background-size': '100%','height': '500px'}" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item"  [routerLink]="[ '/pelicula', peliculas[2].id ]">
               <img  [ngStyle]="{'background-image': 'url('+ (peliculas[3] | peliculaImagen) + ')',
                               'background-size': '100%','height': '500px'}" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item"  [routerLink]="[ '/pelicula', peliculas[3].id ]">
                 <img  [ngStyle]="{'background-image': 'url('+ (peliculas[7] | peliculaImagen) + ')',
                                 'background-size': '100%','height': '500px'}" class="d-block w-100" alt="...">
               </div>
@@ -48,5 +50,6 @@
 
 <app-galeria [galeria]= 'peliculas' titulo = "Cartelera"></app-galeria>
 <app-galeria [galeria]= 'populares' titulo = "cartelera Infantil"></app-galeria>
+<app-galeria [galeria]= 'rangoR' titulo = "Mayoria de edad"></app-galeria>
 
       

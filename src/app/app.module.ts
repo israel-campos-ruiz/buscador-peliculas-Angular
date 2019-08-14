@@ -11,6 +11,7 @@ import { PeliculaImagenPipe } from './pipes/pelicula-imagen.pipe';
 import { GaleriaComponent } from './components/galeria/galeria.component';
 import { BuscadorComponent } from './components/buscador/buscador.component'
 import {FormsModule} from '@angular/forms';
+import { PeliculaComponent } from './components/pelicula/pelicula.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import {FormsModule} from '@angular/forms';
     NavbarComponent,
     PeliculaImagenPipe,
     GaleriaComponent,
-    BuscadorComponent
+    BuscadorComponent,
+    PeliculaComponent
   ],
   imports: [
     BrowserModule,

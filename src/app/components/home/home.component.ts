@@ -7,7 +7,7 @@ import {PeliculasService} from '../../services/peliculas.service'
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  
+// para el esparcimiento de componentes
  peliculas:any;
  populares:any;
  rangoR:any;
@@ -22,6 +22,8 @@ export class HomeComponent implements OnInit {
       this.populares = data.results;
       console.log(this.populares)
     })
+
+    
 
   
    }
